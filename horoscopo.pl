@@ -20,20 +20,19 @@ userData() :-
             read(Mes),
             signo(Mes,Dia).
 
-signo(1,Dia):- 
-  Dia =< 20, capricornio().
-
+signo(1,Dia):- Dia =< 21, capricornio().
 signo(1,_):- aquario().
+
 signo(2,Dia):-  Dia =< 19, aquario().
 signo(2,_):- peixe().
 
 signo(3,Dia):-  Dia =< 20, peixe().
 signo(3,_):- aries().
 
-signo(4,Dia):-  Dia =< 20, aries().
+signo(4,Dia):-  Dia =< 21, aries().
 signo(4,_):- touro().
 
-signo(5,Dia):-  Dia =< 21, touro().
+signo(5,Dia):-  Dia =< 20, touro().
 signo(5,_):- gemeos().
 
 signo(6,Dia):-  Dia =< 21, gemeos().
@@ -42,10 +41,10 @@ signo(6,_):- cancer().
 signo(7,Dia):-  Dia =< 22, cancer().
 signo(7,_):- leao().
 
-signo(8,Dia):-  Dia =< 22, leao().
+signo(8,Dia):-  Dia =< 23, leao().
 signo(8,_):- virgem().
 
-signo(9,Dia):-  Dia =< 23, virgem().
+signo(9,Dia):-  Dia =< 22, virgem().
 signo(9,_):- libra().
 
 signo(10,Dia):-  Dia =< 23, libra().
